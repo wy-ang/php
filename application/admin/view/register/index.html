@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="plugins/layui/css/layui.css" media="all" />
-<link rel="stylesheet" href="website/register/index.css" media="all" />
+<link rel="stylesheet" href="webcommon/css/userinfo.css" media="all" />
 <head>
     <meta charset="UTF-8">
     <title>注册</title>
@@ -13,7 +13,11 @@
             <form action="" class="layui-form form">
                 <div class="layui-form-item">
                     <div class="layui-input-block">
-                        <div class="img"><img src="" alt="" id="avatar"></div>
+                        <div class="img">
+                            <input type="hidden" name="filePath" id="filePath">
+                            <button type="button" class="layui-btn upload" id="upload"></button>
+                            <img src="" alt="" id="avatar">
+                        </div>
                     </div>
                 </div>
                 <div class="layui-form-item">
@@ -34,14 +38,6 @@
                 <div class="layui-form-item">
                     <div class="layui-input-block">
                         <input type="text" name="username" required  lay-verify="required" placeholder="昵称" autocomplete="off" class="layui-input">
-                    </div>
-                </div>
-                <div class="layui-form-item">
-                    <div class="layui-input-block">
-                        <input type="hidden" name="filePath" id="filePath">
-                        <button type="button" class="layui-btn" id="upload">
-                            <i class="layui-icon">&#xe67c;</i>上传图片
-                        </button>
                     </div>
                 </div>
                 <div class="layui-form-item">

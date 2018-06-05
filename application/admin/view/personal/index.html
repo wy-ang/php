@@ -1,23 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>个人中心</title>
-    <link rel="stylesheet" href="plugins/layui/css/layui.css" media="all" />
-    <link rel="stylesheet" href="website/personal/index.css" media="all" />
-</head>
-<body>
+{include file="../../public/head"}
+<link rel="stylesheet" href="webcommon/css/userinfo.css" media="all" />
 <div class="layui-container">
     <div class="layui-row">
         <div class="layui-col-md4 layui-col-md-offset4">
-            <form action="" class="layui-form">
+            <form action="" class="layui-form form">
                 <input type="hidden" id="id">
                 <div class="layui-form-item">
                     <div class="layui-input-block">
                         <div class="img">
                             <input type="hidden" name="filePath" id="filePath">
-                            <button type="button" class="layui-btn upload" id="upload">
-                            </button>
+                            <button type="button" class="layui-btn upload" id="upload"></button>
                             <img src="" alt="" id="avatar">
                         </div>
                     </div>
@@ -46,8 +38,5 @@
         </div>
     </div>
 </div>
-<script src="plugins/jquery/jquery.min.js"></script>
-<script src="plugins/layui/layui.js"></script>
+{include file="../../public/foot"}
 <script src="website/personal/index.js"></script>
-</body>
-</html>

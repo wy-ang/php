@@ -35,7 +35,8 @@ return [
     // 视图输出字符串内容替换
     'tpl_replace_string'=>[
         'website'       => '/static/website',
-        'common'    => '/static/common',
+        'webcommon'       => '/static/website/common',
+        'commons'    => '/static/common',
         'plugins'    => '/static/common/js/plugins',
     ]
 ];

@@ -38,7 +38,8 @@ class RegisterModel extends Model
         } else {
             //修改信息
             $this->save($userinfo, ['id' => $userinfo['id']]);
-            return ['code' => 1, 'msg' => '修改成功'];
+            $data = $this->where('id',$userinfo['id'])->find();
+            return ['code' => 1, 'data' => $data, 'msg' => '修改成功'];
         }
     }
 }

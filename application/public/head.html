@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="plugins/layui/css/layui.css" media="all" />
+<link rel="stylesheet" href="plugins/editor/css/editormd.min.css" media="all" />
+<link rel="stylesheet" href="website/index/index.css" media="all" />
+<style type="text/css">
+    .layui-nav{
+        border-radius: 0;
+    }
+    .layui-nav ul{
+        display: inline-block;
+    }
+    .layui-nav ul+ul{
+        float: right;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+<div class="nav-wrap">
+    <div class="layui-nav layui-clear">
+        <ul>
+            <li class="layui-nav-item">
+                <a href="/admin/index/index">首页</a>
+            </li>
+        </ul>
+        <ul>
+            <li class="layui-nav-item">
+                <img src="http://t.cn/RCzsdCq" class="layui-nav-img" id="img">欢迎, <span id="username"></span>
+            </li>
+            <li class="layui-nav-item">
+                <a href="/admin/register/personal">个人中心<span class="layui-badge-dot"></span></a>
+            </li>
+            <li class="layui-nav-item">
+                <a href="javascript:;" id="logout">退了</a>
+            </li>
+        </ul>
+    </div>
+</div>
