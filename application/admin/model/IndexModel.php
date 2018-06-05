@@ -10,6 +10,7 @@ namespace app\admin\model;
 
 use think\Model;
 use think\Db;
+use think\facade\Session;
 
 class IndexModel extends Model
 {
@@ -23,5 +24,11 @@ class IndexModel extends Model
         } else {
             return ['code' => -1, 'msg' => '获取用户信息失败'];
         }
+    }
+
+    public function articleInfo(){
+        $id = Session::get('id');
+        $article = Db::name('article')->where('authorId', $id)->find();
+        return ['code' => 1, 'data' => $article, 'msg' => '发表成功'];
     }
 }

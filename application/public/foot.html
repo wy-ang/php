@@ -19,6 +19,7 @@
             }
             $('#username').text(res.data.username);
             $('#img').attr('src', res.data.filePath);
+            $('#username').attr('userId',res.data.id);
         }
     });
     //退出
@@ -36,18 +37,6 @@
             });
         });
     });
-
-    $(function () {
-        var editor = editormd("editormd", {
-            width: "100%",
-            height: 500,
-            syncScrolling: "single",
-            path: "plugins/editor/lib/",
-            toolbarIcons: function () {
-                return ["||", "watch", "fullscreen", "preview", "testIcon"]
-            }
-        });
-    })
 </script>
 </body>
 </html>

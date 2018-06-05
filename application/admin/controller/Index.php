@@ -33,4 +33,11 @@ class Index extends Controller
             return $this->success('退出成功');
         }
     }
+
+    public function getAticle()
+    {
+        $aticle = new IndexModel();
+        $data = $aticle->articleInfo();
+        return $data;
+    }
 }
