@@ -6,17 +6,23 @@
  * Time: 11:39
  */
 
-namespace app\index\controller;
+namespace app\admin\controller;
 
-use app\index\model\RegisterModel;
+use app\admin\model\RegisterModel;
 use think\Controller;
 use think\facade\Env;
 
 class Register extends Controller
 {
+    //注册页
     public function index()
     {
         return $this->fetch();
+    }
+    //个人中心
+    public function personal()
+    {
+        return $this->fetch('personal/index');
     }
 
     //注册

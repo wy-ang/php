@@ -1,8 +1,8 @@
 <?php
 
-namespace app\index\controller;
+namespace app\admin\controller;
 
-use app\index\model\IndexModel;
+use app\admin\model\IndexModel;
 use think\Controller;
 use think\facade\Session;
 

@@ -5,7 +5,7 @@
  * Date: 2018/4/16
  * Time: 11:39
  */
-namespace app\index\model;
+namespace app\admin\model;
 
 use think\Model;
 use think\Db;

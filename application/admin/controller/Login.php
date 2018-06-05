@@ -5,9 +5,9 @@
  * Date: 2018/4/16
  * Time: 11:39
  */
-namespace app\index\controller;
+namespace app\admin\controller;
 
-use app\index\model\LoginModel;
+use app\admin\model\LoginModel;
 use think\Controller;
 use think\facade\Session;
 
