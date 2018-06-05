@@ -28,7 +28,7 @@ class IndexModel extends Model
 
     public function articleInfo(){
         $id = Session::get('id');
-        $article = Db::name('article')->where('authorId', $id)->find();
+        $article = Db::name('article')->where('authorId', $id)->select();
         return ['code' => 1, 'data' => $article, 'msg' => '发表成功'];
     }
 }
