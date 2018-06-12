@@ -17,6 +17,7 @@ class ArticleModel extends Model
 
     public function releaseAticle($content)
     {
+        halt($content);
         $data = $this->allowField(true)->save($content);
         if ($data == 1) {
             return ['code' => 1, 'msg' => '发表成功'];

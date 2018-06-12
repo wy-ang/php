@@ -23,11 +23,24 @@ $.ajax({
             timelineItem.push('<li class="layui-timeline-item">');
             timelineItem.push('<i class="layui-icon layui-timeline-axis">&#xe63f;</i>');
             timelineItem.push('<div class="layui-timeline-content layui-text">');
-            timelineItem.push('<h3 class="layui-timeline-title"><span>' + data[i].author + '</span><span>' + data[i].create_time + '</span></h3>');
+            timelineItem.push('<h3 class="layui-timeline-title"><span>'+ data[i].title +'</span><span>' + data[i].author + '</span><span>' + data[i].create_time + '</span><a href="javascript:;" id='+ data[i].id +' class="edit">编辑</a></h3>');
             timelineItem.push('<p>'+ data[i].content +'</p>');
             timelineItem.push('</div>');
             timelineItem.push('</li>');
         }
         $('#article').append(timelineItem.join(''));
     }
+});
+
+$('.edit').click(function () {
+    var id = $(this).attr('id');
+    $.ajax({
+        url: "./",
+        type: "post",
+        data: {},
+        dataType: "json",
+        success: function (res) {
+            
+        }
+    });
 });

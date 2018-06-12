@@ -25,6 +25,7 @@ layui.use('form', function () {
             data: data.field,
             dataType: "json",
             success: function (res) {
+                window.location = '/admin/index/index';
                 layer.msg(res.msg);
             }
         });

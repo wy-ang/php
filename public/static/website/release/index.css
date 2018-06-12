@@ -4,3 +4,6 @@ li{
 .layui-input-block{
     text-align: right;
 }
+.layui-fluid{
+    padding: 15px;
+}
