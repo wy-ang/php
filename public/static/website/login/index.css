@@ -1,0 +1,18 @@
+.form {
+    padding: 50% 0;
+}
+
+.submit-step {
+    width: 100%;
+}
+
+.layui-input-block {
+    margin-left: 0;
+}
+
+.layui-input-block a {
+    display: inline-block;
+    float: right;
+    margin-top: 10px;
+    color: #2D93CA;
+}

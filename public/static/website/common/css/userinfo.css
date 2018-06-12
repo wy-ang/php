@@ -1,0 +1,43 @@
+.form {
+    padding: 50% 0;
+}
+
+.submit-step {
+    width: 100%;
+}
+
+.layui-input-block {
+    margin-left: 0;
+}
+
+.layui-input-block a {
+    display: inline-block;
+    float: right;
+    margin-top: 10px;
+    color: #2D93CA;
+}
+.img{
+    height: 200px;
+    text-align: center;
+}
+.img img{
+    position: absolute;
+    top:0;
+    left: 50%;
+    margin-left: -100px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    z-index: -1;
+}
+.upload{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -100px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: none;
+    border: 1px solid #cecece;
+}
